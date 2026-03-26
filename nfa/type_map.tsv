@@ -1,0 +1,6 @@
+# kind<TAB>accepting_state_ids...
+# Every accepting state in the .jff must appear under exactly one kind.
+# Example:
+# HEX_INT	q40 q41
+# FLOAT	q50
+# IMAG	q60

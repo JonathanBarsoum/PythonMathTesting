@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Student-owned Java Stage 2 classifier logic.
+ *
+ * Edit classifyNumLit(...). The protected bridge owns stdin/stdout JSON,
+ * compilation, and the outer CLI contract.
+ */
+public class NumericLiteralClassifier {
+    /**
+     * Classify one numeric literal candidate.
+     *
+     * Return a 2-item String array: {actual, actualKind}
+     * - actual: "Accept" or "Reject"
+     * - actualKind: BIN_INT|OCT_INT|DEC_INT|ZERO_INT|HEX_INT|FLOAT|IMAG|-
+     *   (use "-" when returning Reject)
+     *
+     * Example accepted input:
+     * - inputText = "0b101_01" -> {"Accept", "BIN_INT"}
+     *
+     * Example rejected input:
+     * - inputText = "_12" -> {"Reject", "-"}
+     */
+    public static String[] classifyNumLit(String inputText) {
+        // TODO: replace this placeholder with your NFA-based implementation.
+        return new String[] { "Reject", "-" };
+    }
+}

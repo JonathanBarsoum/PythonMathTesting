@@ -1,0 +1,53 @@
+# input<TAB>expected<TAB>kind<TAB>case_id<TAB>note
+# See tests/File_Formats.md for full column rules and JFLAP batch/manual usage.
+
+# ===== General =====
+<EPS>	Reject	-	#GEN_0001	empty string (need to enter MANUALLY in JFLAP)
+
+# ===== ZERO_INT (Python allows multiple zeros) =====
+0	Accept	ZERO_INT	#ZRO_0001	single zero
+00	Accept	ZERO_INT	#ZRO_0002	multiple zeros allowed
+000_0	Accept	ZERO_INT	#ZRO_0003	underscores between zeros
+
+# ===== DEC_INT (no leading zeros for nonzero decimals) =====
+1	Accept	DEC_INT	#DEC_0001	minimal nonzero decimal
+1_000_000	Accept	DEC_INT	#DEC_0002	underscore grouping
+01	Reject	-	#DEC_0003	leading zero not allowed
+1__0	Reject	-	#DEC_0004	double underscore
+12a3	Reject	-	#DEC_0005	invalid character
+
+# ===== BIN_INT (underscore may follow base prefix) =====
+0b0	Accept	BIN_INT	#BIN_0001	minimal
+0b_101	Accept	BIN_INT	#BIN_0002	underscore after base prefix allowed
+0b__101	Reject	-	#BIN_0003	double underscore after prefix
+0b102	Reject	-	#BIN_0004	invalid digit
+0b	Reject	-	#BIN_0005	prefix only
+
+# ===== OCT_INT =====
+0o7	Accept	OCT_INT	#OCT_0001	minimal
+0o_701	Accept	OCT_INT	#OCT_0002	underscore after base prefix allowed
+0o89	Reject	-	#OCT_0003	invalid digit
+0o	Reject	-	#OCT_0004	prefix only
+
+# ===== HEX_INT =====
+0xFF	Accept	HEX_INT	#HEX_0001	basic
+0x_DEAD_BEEF	Accept	HEX_INT	#HEX_0002	underscore after base prefix allowed
+0xG	Reject	-	#HEX_0003	invalid digit
+0x	Reject	-	#HEX_0004	prefix only
+
+# ===== FLOAT =====
+0.0	Accept	FLOAT	#FLT_0001	dot form
+.5	Accept	FLOAT	#FLT_0002	leading dot allowed
+5.	Accept	FLOAT	#FLT_0003	trailing dot allowed
+1e0	Accept	FLOAT	#FLT_0004	exponent without dot allowed
+1e	Reject	-	#FLT_0005	exponent marker without digits
+1._0	Reject	-	#FLT_0006	underscore adjacent to dot
+1.2.3	Reject	-	#FLT_0007	multiple dots
+
+# ===== IMAG =====
+10j	Accept	IMAG	#IMG_0001	digitpart + j
+1_0J	Accept	IMAG	#IMG_0002	underscore digitpart + J
+.5j	Accept	IMAG	#IMG_0003	float + j
+1e0j	Accept	IMAG	#IMG_0004	exponent float + j
+0x10j	Reject	-	#IMG_0005	non-decimal base not allowed in imagnumber
+10_j	Reject	-	#IMG_0006	underscore before suffix not allowed
