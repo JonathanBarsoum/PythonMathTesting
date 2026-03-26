@@ -10,9 +10,9 @@ Update this README as your living team record.
 
 ### Team Members
 
-| Full Name | GitHub Username | Bronco ID (no leading zero) | Role |
+| Full Name | GitHub Username | CPP email user name | Role |
 |---|---|---|---|
-| Replace Me | replace_me | 0000000 | Replace Me |
+| Replace Me | replace_me |  | Replace Me |
 
 ### Contributions Summary
 
