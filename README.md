@@ -13,13 +13,14 @@ Update this README as your living team record.
 
 | Full Name | GitHub Username | CPP email user name | Role |
 |---|---|---|---|
-| Replace Me | replace_me |  | Replace Me |
+| Jonathan Barsoum  | JonathanBarsoum  | jabarsoum@cpp.edu  | CEO |
+| Garrison Manson | gmanson-cpp | gmanson@cpp.edu | assistant  to the intern|
 
 ### Contributions Summary
 
 | Member | Approx # Commits | Files Created/Edited | Primary Contributions |
 |---|---:|---|---|
-| replace_me | 0 | None yet | None yet |
+| Jonathan Barsoum  | 1 | 1 | READ.me |
 
 ### Extra Credit Candidates
 
@@ -31,10 +32,10 @@ List all tools used (for example: Copilot, ChatGPT, IDE assistants, linters, for
 
 ### Meeting Minutes (Most Recent First)
 
-#### YYYY-MM-DD
+#### 2026-04-13
 
-- Duration:
-- Participants:
-- Agenda:
-- Decisions:
-- Action items:
+- Duration: 40 min
+- Participants: Jonathan Barsoum, Garrison Manson
+- Agenda: learn project requirments
+- Decisions: roles, timeline
+- Action items: begin stage 1
