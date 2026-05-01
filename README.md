@@ -13,13 +13,13 @@ Update this README as your living team record.
 
 | Full Name | GitHub Username | CPP email user name | Role |
 |---|---|---|---|
-| Jonathan Barsoum  | JonathanBarsoum  | jabarsoum@cpp.edu  | CEO |
-| Garrison Manson | gmanson-cpp | gmanson@cpp.edu | assistant  to the intern|
+| Jonathan Barsoum  | JonathanBarsoum  | jabarsoum@cpp.edu  | group member |
+| Garrison Manson | gmanson-cpp | gmanson@cpp.edu | assistant | group member |
 
 ### Contributions Summary
 
 | Member | Approx # Commits | Files Created/Edited | Primary Contributions |
-|---|---:|---|---|
+|Garrison Manson|6|6|sub-NFA desgin|
 | Jonathan Barsoum  | 1 | 1 | READ.me |
 
 ### Extra Credit Candidates
@@ -31,6 +31,13 @@ Update this README as your living team record.
 List all tools used (for example: Copilot, ChatGPT, IDE assistants, linters, formatters), and state exactly what each tool helped with.
 
 ### Meeting Minutes (Most Recent First)
+
+### 2026-04-30
+- Duration 3 hr
+- Participants: Jonathn Barsoum, Garrison Manson
+- Agenda: complete sub-NFA design, test sub-NFAs
+- Decisions: sub-NFA design, test strings
+- Action items: complete testing of sub-NFAs
 
 #### 2026-04-13
 
