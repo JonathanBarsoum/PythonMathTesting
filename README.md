@@ -19,7 +19,7 @@ Update this README as your living team record.
 ### Contributions Summary
 
 | Member | Approx # Commits | Files Created/Edited | Primary Contributions |
-|Garrison Manson|6|6|sub-NFA desgin|
+|Garrison Manson|11|6|sub-NFA desgin|
 | Jonathan Barsoum  | 1 | 1 | READ.me |
 
 ### Extra Credit Candidates
