@@ -19,7 +19,7 @@ Update this README as your living team record.
 ### Contributions Summary
 
 | Member | Approx # Commits | Files Created/Edited | Primary Contributions |
-|Garrison Manson|11|6|sub-NFA desgin|
+|Garrison Manson|12|7|sub-NFA desgin|
 | Jonathan Barsoum  | 1 | 1 | READ.me |
 
 ### Extra Credit Candidates
@@ -30,17 +30,28 @@ Update this README as your living team record.
 
 List all tools used (for example: Copilot, ChatGPT, IDE assistants, linters, formatters), and state exactly what each tool helped with.
 
+ChatGPT
+Helped with explaining instructions in a simpler way.
+Helped with specific questions about Python lexical analysis that the Python page didn't explain - ex: "can you have an
+  underscore before or after a decimal point for floats?
+
 ### Meeting Minutes (Most Recent First)
+
+### 2026-05-01
+- Duration 25 min
+- Participats: Garrison Manson
+- Agenda: come up with test cases for sub-NFAs
+- Decisions: test strings
+- Action items: testing of sub-NFAs
 
 ### 2026-04-30
 - Duration 3 hr
 - Participants: Jonathn Barsoum, Garrison Manson
 - Agenda: complete sub-NFA design, test sub-NFAs
 - Decisions: sub-NFA design, test strings
-- Action items: complete testing of sub-NFAs
+- Action items: start testing of sub-NFAs
 
 #### 2026-04-13
-
 - Duration: 40 min
 - Participants: Jonathan Barsoum, Garrison Manson
 - Agenda: learn project requirments
