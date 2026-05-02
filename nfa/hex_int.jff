@@ -16,8 +16,8 @@
 			<y>146.0</y>&#13;
 		</state>&#13;
 		<state id="3" name="q3">&#13;
-			<x>348.0</x>&#13;
-			<y>150.0</y>&#13;
+			<x>350.0</x>&#13;
+			<y>149.0</y>&#13;
 			<final/>&#13;
 		</state>&#13;
 		<state id="4" name="q4">&#13;
@@ -25,11 +25,6 @@
 			<y>152.0</y>&#13;
 		</state>&#13;
 		<!--The list of transitions.-->&#13;
-		<transition>&#13;
-			<from>2</from>&#13;
-			<to>3</to>&#13;
-			<read>a,b,c,d,e,f</read>&#13;
-		</transition>&#13;
 		<transition>&#13;
 			<from>3</from>&#13;
 			<to>4</to>&#13;
@@ -46,14 +41,14 @@
 			<read>A,B,C,D,E,F</read>&#13;
 		</transition>&#13;
 		<transition>&#13;
-			<from>4</from>&#13;
+			<from>2</from>&#13;
 			<to>3</to>&#13;
 			<read>a,b,c,d,e,f</read>&#13;
 		</transition>&#13;
 		<transition>&#13;
-			<from>2</from>&#13;
+			<from>4</from>&#13;
 			<to>3</to>&#13;
-			<read>_</read>&#13;
+			<read>a,b,c,d,e,f</read>&#13;
 		</transition>&#13;
 		<transition>&#13;
 			<from>4</from>&#13;
@@ -66,9 +61,11 @@
 			<read>A,B,C,D,E,F</read>&#13;
 		</transition>&#13;
 		<transition>&#13;
-			<from>0</from>&#13;
-			<to>1</to>&#13;
-			<read>0</read>&#13;
+			<from>2</from>&#13;
+			<to>4</to>&#13;
+			<controlx>370</controlx>&#13;
+			<controly>281</controly>&#13;
+			<read>_</read>&#13;
 		</transition>&#13;
 		<transition>&#13;
 			<from>1</from>&#13;
@@ -79,6 +76,11 @@
 			<from>1</from>&#13;
 			<to>2</to>&#13;
 			<read>X</read>&#13;
+		</transition>&#13;
+		<transition>&#13;
+			<from>0</from>&#13;
+			<to>1</to>&#13;
+			<read>0</read>&#13;
 		</transition>&#13;
 	</automaton>&#13;
 </structure>
